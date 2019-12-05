@@ -1,0 +1,8 @@
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\bin\Debug\NetPatterns.dll
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\bin\Debug\NetPatterns.pdb
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.csprojResolveAssemblyReference.cache
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.csproj.CoreCompileInputs.cache
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.dll
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.pdb
+F:\YandexDisk_forMe\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.dll
+F:\YandexDisk_forMe\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\NetPatterns\obj\Debug\NetPatterns.pdb

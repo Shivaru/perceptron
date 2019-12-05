@@ -1,0 +1,13 @@
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\Cmd\obj\Debug\Cmd.exe
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\Cmd\obj\Debug\Cmd.pdb
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\bin\Debug\Cmd.exe
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\bin\Debug\Cmd.pdb
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\bin\Debug\NetPatterns.dll
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\bin\Debug\NetPatterns.pdb
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.csprojResolveAssemblyReference.cache
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.Form1.resources
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.Properties.Resources.resources
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.csproj.GenerateResource.Cache
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.csproj.CoreCompileInputs.cache
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.exe
+F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\NetPatterns\Cmd\obj\Debug\Cmd.pdb

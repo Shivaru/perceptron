@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+    using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace Exp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Массив значений входных.
+            // Массив правильных значений.
+            // Массив весов для входных значений.
+            // Нормализация.
+            // Расчет функции.
+            // Расчет ошибки.
+            // Корректировка веса.
+
+            // Инициализация.
+            var Epoch = 30;
+            var AnswerCount = 3;
+            var Layer1 = 3;
+            var Layer2 = 2;
+            var Layer3 = 1;
+            var LayerLast = 1;
+            var Error = 0.0;
+            var Answer = 0.0;
+            var Mult= 0.0;
+            var Summ= 0.0;
+            var LearnRate = 0.5;
+
+            double[] A = new double[10];
+            double[] B = new double[10];
+            double[] C = new double[10];
+            var InCount = 3; // Количество входных параметров.
+
+            double[] In = new double[InCount];
+            double[] Fx1 = new double[Layer1];
+            double[] Fx2 = new double[Layer2];
+            double[] FxLast = new double[LayerLast];
+            double[,] InWeights1 = new double[InCount,Layer1];
+            double[,] InWeights2 = new double[Fx1.Length, Layer2];
+            double[,] InWeights3 = new double[Fx2.Length, Layer3];
+            double[] InWeightsLast = new double[Fx2.Length];
+
+            double[] Answers = new double[AnswerCount]; // Массив правильных значений.
+
+            double[] Errors = new double[AnswerCount]; // Массив ошибок.
+
+
+//------------------------------------------------------------------------------------------------
+            // Нормализация
+
+
+//------------------------------------------------------------------------------------------------
+
+            // Массив значений входных для ABC count = 1.
+
+            for (var i = 0; i < InCount; i++)
+            {
+                double wr = i*0.5;
+                In[i] = wr;
+                Console.WriteLine("In[{0}]={1}",i, wr);
+            }
+
+            // Массив правильных значений.
+
+            for (var i = 0; i < AnswerCount; i++)
+            {
+                double wr = i * 0.2;
+                Answers[i] = wr;
+                Console.WriteLine("Answer[{0}]={1}", i, wr);
+            }
+
+            // Массив весов для входных значений.
+
+            Random Wran1 = new Random();
+            for (var i = 0; i < InCount; i++)
+            {
+                for (var j = 0; j < Layer1; j++)
+                {
+                    double wr = Wran1.NextDouble() * (-0.5 - .5) + .5;
+                    InWeights1[i, j] = wr;
+                }
+                //Console.WriteLine("=" + InWeights1[i, 1]);
+            }
+
+            // Массив весов для входных значениq из слоя 1 для слоя 2.
+
+            Random Wran2 = new Random();
+            for (var i = 0; i < Fx1.Length; i++)
+            {
+                for (var j = 0; j < Layer2; j++)
+                {
+                    double wr = Wran2.NextDouble() * (-0.5 - .5) + .5;
+                    InWeights2[i, j] = wr;
+                }
+                //Console.WriteLine("=" + InWeights1[i, 1]);
+            }
+
+            // Массив весов для входных значениq из слоя 2 для слоя 3.
+
+            Random Wran3 = new Random();
+            for (var i = 0; i < Fx2.Length; i++)
+            {
+                for (var j = 0; j < Layer3; j++)
+                {
+                    double wr = Wran3.NextDouble() * (-0.5 - .5) + .5;
+                    InWeights3[i, j] = wr;
+                }
+                //Console.WriteLine("=" + InWeights1[i, 1]);
+            }
+
+            // Массив весов для входных значений из слоя 3 для слоя Last.
+
+            Random Wran4 = new Random();
+            for (var i = 0; i < Fx2.Length; i++)
+            {
+                double wr = Wran4.NextDouble() * (-0.5 - .5) + .5;
+                InWeightsLast[i] = wr;
+                //Console.WriteLine("=" + InWeights1[i, 1]);
+            }
+
+//-------------------------------------------------------------------------------------------------
+
+
+            // Цикл повторов.
+            for (var k = 0; k < Epoch; k++)
+            {
+
+            // Расчет функции активации слой1.
+
+            Neyron N1 = new Neyron();
+            /*
+            for (var i = 0; i < Layer1; i++)
+            {
+                Mult = 0;
+                Summ = 0;
+                for (var j = 0; j < InCount; j++)
+                {
+                    double X = Convert.ToDouble(In[j]);
+                    double W = Convert.ToDouble(InWeights1[j,i]);
+                    Mult = X * W;
+                    Summ = Summ + Mult;
+                    Console.WriteLine("X[{3}]= {0} W= {1}, Summ= {2} ", X, W, Summ, j);
+                }
+                Fx1[i] = N1.Func(Summ);
+                Console.WriteLine("Fx1= " + Fx1[i]);
+            }
+            */
+
+            Fx1 = N1.Calculate(Layer1, In, ref InWeights1);
+
+            // Расчет функции активации слой2.
+
+            Neyron N2 = new Neyron();
+            /*
+            for (var i = 0; i < Layer2; i++)
+            {
+                Mult = 0;
+                Summ = 0;
+                for (var j = 0; j < Fx1.Length; j++)
+                {
+                    double X = Convert.ToDouble(Fx1[j]);
+                    double W = Convert.ToDouble(InWeights2[j, i]);
+                    Mult = X * W;
+                    Summ = Summ + Mult;
+                    Console.WriteLine("X[{3}]= {0} W= {1}, Summ= {2} ", X, W, Summ, j);
+                }
+                Fx2[i] = N2.Func(Summ);
+                Console.WriteLine("Fx2= " + Fx2[i]);
+            }
+            */
+
+            Fx2 = N2.Calculate(Layer2, Fx1, ref InWeights2);
+
+            // Расчет функции активации последний слой.
+
+            Neyron N3 = new Neyron();
+            /*
+            for (var i = 0; i < LayerLast; i++)
+            {
+                Mult = 0;
+                Summ = 0;
+                for (var j = 0; j < Fx2.Length; j++)
+                {
+                    double X = Convert.ToDouble(Fx2[j]);
+                    double W = Convert.ToDouble(InWeightsLast[j]);
+                    Mult = X * W;
+                    Summ = Summ + Mult;
+                    Console.WriteLine("X[{3}]= {0} W= {1}, Summ= {2} ", X, W, Summ, j);
+                }
+                FxLast[i] = N3.Func(Summ);
+                Console.WriteLine("FxLast= " + FxLast[i]);
+            }
+            */
+
+            FxLast = N3.CalculateLast(LayerLast, Fx2, ref InWeightsLast);
+//------------------------------------------------------------------------------------------------------------------------
+            // Расчет ошибки.
+
+            for (int i = 0; i < FxLast.Length; i++)
+            {
+                Errors[i] = Math.Pow((Answer - FxLast[i]), 2) / 1; ;
+                Error = (Answer - FxLast[i]) * (FxLast[i]*(1-FxLast[i]));
+                Console.WriteLine("Error= {0}, Errors[i]= {1} ",Error,Errors[i]);
+            }
+
+            // Изменение весов. Последний слой.
+/*
+            for (var i = 0; i < LayerLast; i++)
+            {
+                Error = (Answer - FxLast[i]) * (FxLast[i] * (1 - FxLast[i]));
+                for (var j = 0; j < Fx2.Length; j++)
+                {
+                    var W = Convert.ToDouble(InWeightsLast[j]);
+                    var Wnew = 0.0;
+                    Wnew = W + (LearnRate * Error * Fx2[j]);// Значение предыдущего выхода.
+                    InWeightsLast[j] = Wnew;
+                }
+            }
+*/
+            N3.ReturnLast(LayerLast, Answer, LearnRate, FxLast, Fx2, ref InWeightsLast);
+
+/*
+            // Изменение весов. Слой 2.
+            Error = 0.0;
+            for (var i = 0; i < Layer2; i++)
+            {
+                Error = (Answer - Fx2[i]) * (Fx2[i] * (1 - Fx2[i]));
+                for (var j = 0; j < Fx1.Length; j++)
+                {
+                    var W = Convert.ToDouble(InWeights2[j, i]);
+                    var Wnew = 0.0;
+                    Wnew = W + (LearnRate * Error * Fx1[j]);
+                    InWeights2[j,i] = Wnew;
+                }
+            }
+
+ */
+            N2.Return(Layer2, Answer, LearnRate, Fx2, Fx1, ref InWeights2);
+
+            // Изменение весов. Слой 1.
+/*
+            for (var i = 0; i < Layer1; i++)
+            {
+                Error = (Answer - Fx1[i]) * (Fx1[i] * (1 - Fx1[i]));
+                for (var j = 0; j < InCount; j++)
+                {
+                    var W = Convert.ToDouble(InWeights1[j, i]);
+                    var Wnew = 0.0;
+                    Wnew = W + (LearnRate * Error * In[j]);
+                    InWeights1[j, i] = Wnew;
+                    //Console.WriteLine("W= {0} Wnew= {1} InWerights2= {2}", W, Wnew, InWeights1[j, i]);
+                }
+            }
+
+ */
+            N1.Return(Layer1, Answer, LearnRate, Fx1, In, ref InWeights1);
+
+
+            /*
+            // Вывод.
+            var count = 0;
+            foreach (var x in Answers)
+            {
+                count++;
+                //Console.WriteLine("Answers[{0}]= {1}", count, x);
+            }
+            count = 0;
+            foreach (var x in In)
+            {
+                count++;
+                Console.WriteLine("IN[{0}]= {1}", count, x);
+            }
+            count = 0;
+            foreach (var x in InWeights1)
+            {
+                count++;
+                Console.WriteLine("InWeihts1[{0}]= {1}", count, x);
+            }
+            count = 0;
+            foreach (var x in Fx1)
+            {
+                count++;
+                Console.WriteLine("Fx1[{0}]= {1}", count, x);
+            }
+            count = 0;
+            foreach (var x in InWeights2)
+            {
+                count++;
+                Console.WriteLine("InWeihts2[{0}]= {1}", count, x);
+            }
+
+            */
+
+
+
+            }
+
+
+
+        }
+    }
+}
+
+УДАЛЕННЫЕ КУСКИ
+
+
+
+            // Массив весов для входных значений.
+
+            //Random Wran1 = new Random();
+            //for (var i = 0; i < InCount; i++)
+            //{
+            //    for (var j = 0; j < Layer1; j++)
+            //    {
+            //        double wr = Wran1.NextDouble() * (-0.5 - .5) + .5;
+            //        InWeights1[i, j] = wr;
+            //    }
+            //    Console.WriteLine("=" + InWeights1[i, 1]);
+            //}
+
+            // Массив весов для входных значениq из слоя 1 для слоя 2.
+
+            //Random Wran2 = new Random();
+            //for (var i = 0; i < Fx1.Length; i++)
+            //{
+            //    for (var j = 0; j < Layer2; j++)
+            //    {
+            //        double wr = Wran2.NextDouble() * (-0.5 - .5) + .5;
+            //        InWeights2[i, j] = wr;
+            //    }
+            //    //Console.WriteLine("=" + InWeights1[i, 1]);
+            //}
+
+
+            // Массив весов для входных значениq из слоя 2 для слоя 3.
+
+            //Random Wran3 = new Random();
+            //for (var i = 0; i < Fx2.Length; i++)
+            //{
+            //    for (var j = 0; j < Layer3; j++)
+            //    {
+            //        double wr = Wran3.NextDouble() * (-0.5 - .5) + .5;
+            //        InWeights3[i, j] = wr;
+            //    }
+            //    //Console.WriteLine("=" + InWeights1[i, 1]);
+            //}
+
+            // Массив весов для входных значений из слоя 3 для слоя Last.
+
+            //Random Wran4 = new Random();
+            //for (var i = 0; i < Fx2.Length; i++)
+            //{
+            //    double wr = Wran4.NextDouble() * (-0.5 - .5) + .5;
+            //    InWeightsLast[i] = wr;
+            //    //Console.WriteLine("=" + InWeights1[i, 1]);
+            //}
+
+// Расчет ошибки.
+
+                //for (int i = 0; i < FxLast.Length; i++)
+                //{
+                //    Errors[i] = Math.Pow((Answers[a] - FxLast[i]), 2) / 1; ;
+                //    Error = (Answers[a] - FxLast[i]) * (FxLast[i] * (1 - FxLast[i]));
+                //    //Console.WriteLine("Error= {0}, Errors[i]= {1} ",Error,Errors[i]);
+                //    Console.WriteLine("FxLast= {0}, Answers[a]= {1} Error={2}", FxLast[i], Answers[a], Errors[i]);
+                //    Ers.Add(Error);
+                //}
+
+
+
+
+
+</html>

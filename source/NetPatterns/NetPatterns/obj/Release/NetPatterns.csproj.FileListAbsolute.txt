@@ -1,0 +1,11 @@
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns\obj\Release\NetPatterns.dll
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns\obj\Release\NetPatterns.pdb
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns\bin\Release\NetPatterns.dll
+D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns\bin\Release\NetPatterns.pdb
+G:\NetPatterns\NetPatterns\bin\Release\NetPatterns.dll
+G:\NetPatterns\NetPatterns\bin\Release\NetPatterns.pdb
+G:\NetPatterns\NetPatterns\obj\Release\NetPatterns.csprojResolveAssemblyReference.cache
+G:\NetPatterns\NetPatterns\obj\Release\NetPatterns.csproj.CoreCompileInputs.cache
+G:\NetPatterns\NetPatterns\obj\Release\NetPatterns.dll
+G:\NetPatterns\NetPatterns\obj\Release\NetPatterns.pdb

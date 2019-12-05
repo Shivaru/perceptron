@@ -1,0 +1,10 @@
+obj\Release\ResolveAssemblyReference.cache
+bin\Release\NetPatterns.dll
+bin\Release\NetPatterns.pdb
+obj\Release\NetPatterns.dll
+obj\Release\NetPatterns.pdb
+bin\Debug\NetPatterns.dll
+bin\Debug\NetPatterns.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\NetPatterns.dll
+obj\Debug\NetPatterns.pdb

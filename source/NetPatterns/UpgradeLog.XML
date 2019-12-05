@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NetPatterns">
+</Property><Property Name="Solution File" Value="D:\Projects\Courses\TP\Compact\Labs\Lab4\Samples\NetPatterns\NetPatterns.sln">
+</Property><Property Name="Date" Value="8 ноября 2011 г.">
+</Property><Property Name="Time" Value="14:01">
+</Property></Properties><Event ErrorLevel="0" Project="NetPatterns" Source="NetPatterns\NetPatterns.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NetPatterns" Source="NetPatterns\NetPatterns.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IterApp" Source="NetPattApp\IterApp.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IterApp" Source="NetPattApp\IterApp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Timer" Source="Timer\Timer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Timer" Source="Timer\Timer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Timer2" Source="Timer2\Timer2.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Timer2" Source="Timer2\Timer2.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Cmd" Source="Cmd\Cmd.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Cmd" Source="Cmd\Cmd.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NetPatterns.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NetPatterns.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NetPatterns" Source="NetPatterns\NetPatterns.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IterApp" Source="NetPattApp\IterApp.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Timer" Source="Timer\Timer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Timer2" Source="Timer2\Timer2.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Cmd" Source="Cmd\Cmd.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

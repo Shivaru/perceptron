@@ -1,0 +1,7 @@
+bin\Release\NetPattApp.exe
+bin\Release\NetPattApp.pdb
+bin\Release\NetPatterns.dll
+bin\Release\NetPatterns.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\NetPattApp.exe
+obj\Release\NetPattApp.pdb

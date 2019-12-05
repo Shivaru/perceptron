@@ -1,0 +1,17 @@
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.Tests.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.Tests.pdb
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.exe
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\Microsoft.Pex.Framework.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\Microsoft.ExtendedReflection.Reasoning.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\Microsoft.ExtendedReflection.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.pdb
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ConsoleApp1.exe.config
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\Microsoft.Pex.Framework.xml
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ru\Microsoft.Pex.Framework.resources.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\bin\Debug\ru\Microsoft.ExtendedReflection.resources.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\obj\Debug\ConsoleApp1.Tests.csprojResolveAssemblyReference.cache
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\obj\Debug\ConsoleApp1.Tests.csproj.CoreCompileInputs.cache
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\obj\Debug\ConsoleApp1.Tests.dll
+D:\YandexDisc\ВолгГТУ\BoxGuru\Experiment\comport\ConsoleApp1\ConsoleApp1.Tests\obj\Debug\ConsoleApp1.Tests.pdb

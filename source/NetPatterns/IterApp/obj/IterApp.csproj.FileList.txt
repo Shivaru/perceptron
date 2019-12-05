@@ -1,0 +1,14 @@
+bin\Release\NetPatterns.dll
+bin\Release\NetPatterns.pdb
+obj\Release\ResolveAssemblyReference.cache
+bin\Release\IterApp.exe
+bin\Release\IterApp.pdb
+obj\Release\IterApp.exe
+obj\Release\IterApp.pdb
+bin\Debug\IterApp.exe
+bin\Debug\IterApp.pdb
+bin\Debug\NetPatterns.dll
+bin\Debug\NetPatterns.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IterApp.exe
+obj\Debug\IterApp.pdb
