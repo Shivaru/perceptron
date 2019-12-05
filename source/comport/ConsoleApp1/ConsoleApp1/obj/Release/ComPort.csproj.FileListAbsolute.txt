@@ -1,8 +1,0 @@
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe.config
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.exe
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Release\ConsoleApp1.pdb
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.Form1.resources
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Release\ComPort.csproj.GenerateResource.Cache
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Release\ComPort.csproj.CoreCompileInputs.cache
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.exe
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Release\ConsoleApp1.pdb

@@ -1,7 +1,0 @@
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Debug\ComPortT.csproj.CoreCompileInputs.cache
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
-F:\YandexDisk\YandexDisk\ВолгГТУ\BoxGuru\Exp10\source\comport\ConsoleApp1\ConsoleApp1\obj\Debug\ComPortT.csprojResolveAssemblyReference.cache
