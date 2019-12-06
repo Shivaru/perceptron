@@ -376,37 +376,30 @@ namespace Exp1
                 bs.GetSqlData("InWeights3", "W", out InW3);
                 bs.GetSqlData("InWeightsLast", "W", out InWL);
                 int p = 0;
-                for (int i = 0; i <InCount; i++)
-                {
-                    for (int j = 0; j < Layer1; j++)
-                    {
+                for (int i = 0; i <InCount; i++){
+                    for (int j = 0; j < Layer1; j++){
                         InWeights1[i, j] = Convert.ToDouble(InW1[p]);
                         p++;
                     }
                 }
                 p = 0;
-                for (int i = 0; i < Layer1; i++)
-                {
-                    for (int j = 0; j < Layer2; j++)
-                    {
+                for (int i = 0; i < Layer1; i++){
+                    for (int j = 0; j < Layer2; j++){
                         InWeights2[i, j] = Convert.ToDouble(InW2[p]);
                         p++;
                     }
                 }
                 p = 0;
-                for (int i = 0; i < Layer2; i++)
-                {
-                    for (int j = 0; j < Layer3; j++)
-                    {
+                for (int i = 0; i < Layer2; i++){
+                    for (int j = 0; j < Layer3; j++){
                         InWeights3[i, j] = Convert.ToDouble(InW2[p]);
                         p++;
                     }
                 }
-                for (int i = 0; i < Layer2; i++)
-                {
+                for (int i = 0; i < Layer2; i++){
                         InWeightsLast[i] = Convert.ToDouble(InW2[i]);
                         p++;
-                }
+                    }
             }
 
             // Массив ошибок
@@ -484,29 +477,15 @@ namespace Exp1
                             sigm1[i] = (N1.dFunc(Fx1[i]) * Fx1[i]) * (InWeights2[i, j] * sigm);                         
                         }
                     }
-
                     N1.Return1(ref InWeights1, sigm1, sigm, In, LearnRate, 0, Fx1.Length);
-
-
-
                 }
 
                 double sum = 0;
-                
-                for (int i = 0; i < AnswerCount; i++)
-                {                    
+                for (int i = 0; i < AnswerCount; i++){                    
                     sum = Ers[i] + sum;                    
                 }
-
                 Errors[k] = sum / AnswerCount;
                 N0.ShowProgress(k,Epoch);
-
-                
-                
-
-
-
-
             }
 
             //Запись весов для повтора
@@ -548,8 +527,6 @@ namespace Exp1
             f2.Show();
             Application.Run(new Form1(Errors));
             Application.Run(new Form1(Last));
-
-
         }
     }
 }
