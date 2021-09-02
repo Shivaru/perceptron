@@ -1,0 +1,3 @@
+Classifies the match based on the positional motion sensor. A classic multi-layer perceptron in C# is implemented without the use of third-party libraries as part of the development of a diploma project of a software and hardware complex for the classification of movements.
+
+Классифицирует совпадение на основании позиционного датчика движения. Реализован классический многослойный персептрон на C# без использования сторонних библиотек в рамках разработки дипломного проекта программно аппаратного комплекса классификации движений.
